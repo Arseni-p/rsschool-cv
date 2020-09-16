@@ -1,0 +1,154 @@
+
+html {
+  font-family: 'Century Gothic', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  margin: 0 auto;
+
+  background: url();
+  background-color: black;
+
+}
+
+*::selection {
+  background-color: #da4465;
+  color: #fff;
+}
+
+p, ul, ol, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+
+  border-style: none;
+}
+
+input, textarea, button, label {
+  outline: none;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+a:hover {
+    opacity: 0.6;
+    color: #00aeef;
+  }
+
+a:active {
+    opacity: 0.3;
+  }
+
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.button {
+  width: 100%;
+
+  text-transform: uppercase;
+  color: #fff;
+  
+  border: none;
+
+  background-color: #da284f;
+
+  cursor: pointer;
+  outline: none;
+
+
+}
+
+.button:hover {
+  background-color: #da4465;
+}
+
+.button:active {
+  background-color: #b32645;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-none {
+  width: 100%;
+  height: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+@media(min-width: 1050px), (max-width: 1250px) {
+  
+  body {
+    max-width: 1250px;
+  }
+
+  
+  .section__wrapper {
+    margin: 0 auto;
+    
+    width: 85%;
+  }
+}
+
+
+@media(max-width: 1049px) {
+  html {
+    font-size: 14px;
+  }
+  
+  body {
+    max-width: 1049px;
+  }
+
+  .section__wrapper {
+    width: 90%;
+  }
+}
+
+
+@media(max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+  
+  body {
+    min-width: 320px;
+    max-width: 767px /*321px*/;
+  }
+
+  .section__wrapper {
+    width: 95%;
+  }
+}
+
+
