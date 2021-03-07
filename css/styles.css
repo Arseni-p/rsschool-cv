@@ -1,0 +1,394 @@
+
+
+@media(min-width: 1050px), (max-width: 1250px) {
+
+  /*HEADER---------------------------*/
+  .cv__header {
+    position: relative;
+    padding: 100px 0 25px;
+    background-color: #414142;
+  }
+
+  .cv__name,
+  .cv__vacancy {
+    margin-left: 350px;
+    text-transform: uppercase;
+  }
+
+  .cv__name {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .cv__vacancy {
+    font-size: 1.1rem;
+    color: #949698;
+  
+  }
+  .cv__image--wrap {
+    position: absolute;
+    left: 50px;
+    bottom: -100px;
+    
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+
+
+  /*MAIN---------------------------*/
+  .cv__info {
+    display: flex;
+
+    padding-bottom: 50px;
+    background-color: #fff;
+
+    color: #555855;
+  }
+
+  .cv__info--short {
+    padding: 0 50px;
+    width: 250px;
+  }
+
+  .cv__info--detailed {
+    padding: 0 50px;
+    width: calc(100% - 450px);
+
+    border-left: 2px solid #bfc0c1;
+  }
+
+  .cv__info--short {
+    padding-top: 100px;
+  }
+
+  .cv__section {
+    padding: 25px 0;
+
+    border-bottom: 2px solid #bfc0c1;
+  }
+
+  .cv__section:last-child {
+    border: none;
+  }
+
+  .section__title {
+    margin-bottom: 10px;
+
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    color: #00aeef;
+  }
+
+
+  /*CV__INFO--SHORT inside --------------------*/
+  .persanal__item,
+  .contacts__item,
+  .skills__item,
+  .softwear__item {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+
+  .persanal__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hobbies span{
+    align-self: flex-start;
+  }
+
+  .persanal__item--name {
+    width: 35%;
+  }
+  .persanal__item--dot {
+    width: 5%;
+  }
+  .persanal__item--value {
+    width: 55%;
+  }
+
+
+  .skills__item,
+  .softwear__item {
+    position: relative;
+    padding-left: 20px;
+  }
+
+  .skills__item::before,
+  .softwear__item::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    bottom: 3px;
+
+    border: 5px solid transparent;
+    border-left-color: #414142;
+    border-left-width: 10px;
+  }
+
+  .persanal__item:last-child,
+  .skills__item:last-child,
+  .softwear__item:last-child {
+    margin: 0;
+  }
+
+  .contacts__item {
+    display: flex;
+  }
+
+  .link-icon {
+    width: 30px;
+    padding-right: 10px;
+  }
+
+  .contacts__item--link {
+    display: inline-block;
+    line-height: 30px;
+  }
+
+  
+
+  /*CV__INFO--DETAILED inside --------------------*/
+  .persanal__text {
+    margin-bottom: 10px;
+  }
+
+  .persanal__text:last-child {
+    margin-bottom: 0;
+  }
+
+  /*CV__INFO--DETAILED education & reference*/
+
+  .education__wrap,
+  .reference__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .education__item,
+  .reference__item {
+    width: 49%;
+  }
+
+  .education__title,
+  .reference__title {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .education__text,
+  .reference__text {
+    margin-bottom: 5px;
+  }
+
+  .education__text:last-child,
+  .reference__text:last-child {
+    margin: 0;
+  }
+
+  
+  /*CV__INFO--DETAILED Experience*/
+  .experience__item--wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+
+    margin-bottom: 20px;
+  }
+
+  .experience__item:last-child {
+    margin: 0;
+  }
+
+  .experience__item--title,
+  .experience__item--date {
+    width: 45%;
+    margin-bottom: 5px;
+  }
+
+  .experience__item--date {
+    text-align: right;
+  }
+
+  .experience__item--company {
+    margin-bottom: 5px;
+  }
+
+  .experience__item--company,
+  .experience__item--company {
+    width: 100%;
+  }
+}
+
+
+
+@media(max-width: 1049px) {
+  
+  /*HEADER---------------------------*/
+  .cv__header {
+    padding: 70px 0 20px;
+  }
+
+  .cv__name,
+  .cv__vacancy {
+    margin-left: 300px;
+  }
+
+  .cv__image--wrap {
+    left: 50px;
+
+    width: 200px;
+    height: 200px;
+  }
+
+  
+  /*MAIN---------------------------*/
+  .cv__info {
+    padding-bottom: 25px;
+  }
+
+  .cv__info--short {
+    padding: 0 25px;
+    width: 250px;
+  }
+
+  .cv__info--detailed {
+    padding: 0 25px;
+    width: calc(100% - 350px);
+  }
+
+  .cv__info--short {
+    padding-top: 90px;
+  }
+
+
+  
+  /*CV__INFO--SHORT inside --------------------*/
+
+  .link-icon {
+    width: 25px;
+  }
+
+  .contacts__item--link {
+    line-height: 25px;
+  }
+
+
+  /*CV__INFO--DETAILED inside --------------------*/
+  .persanal__text {
+    margin-bottom: 10px;
+  }
+
+  .persanal__text:last-child {
+    margin-bottom: 0;
+  }
+
+  /*CV__INFO--DETAILED Experience*/
+  .experience__item--wrap {
+    margin-bottom: 15px;
+  }
+
+}
+
+
+@media(max-width: 767px) {
+
+  /*HEADER---------------------------*/
+  .cv__header {
+    padding: 20px 0;
+    min-height: 125px;
+  }
+
+  .cv__name,
+  .cv__vacancy {
+    margin-left: 175px;
+  }
+  
+  .cv__name {
+    margin-top: 50px
+
+  }
+
+  .cv__image--wrap {
+    left: 25px;
+    top: 20px;
+    bottom: auto;
+    width: 125px;
+    height: 125px;
+  }
+
+
+  /*MAIN-----------------------------*/
+  .cv__info {
+    flex-direction: column;
+
+    padding-top: 0;
+  }
+
+  .cv__info--short {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 0;
+    width: calc(100% - 50px);
+  }
+
+  .cv__info--short .cv__section {
+    border-bottom: 2px solid #bfc0c1;
+  }
+
+  .cv__info--detailed {
+    width: calc(100% - 50px);
+
+    border-left: none;
+  }
+
+  .cv__section {
+    padding: 15px 0;
+    width: 100%;
+  }
+
+
+    /*CV__INFO--SHORT inside --------------------*/
+
+  .skills__section,
+  .qualities__section {
+    width: 48%;
+  }
+
+  .persanal__item {
+    justify-content: flex-start;
+  }
+  
+  .persanal__item--name {
+    width: 25%;
+  }
+  .persanal__item--dot {
+    width: 3%;
+  }
+  .persanal__item--value {
+    width: 65%;
+  }
+
+  .link-icon {
+    width: 20px;
+  }
+
+  .contacts__item--link  {
+    line-height: 20px;
+  }
+
+
+
+
+
+
+
+}
