@@ -38,26 +38,23 @@
 
   .cv__info {
     display: flex;
-    padding-bottom: 50px;
     background-color: #fff;
     color: #555855;
   }
 
   .cv__info--short {
     padding: 0 50px;
+    padding-top: 125px;
     width: 350px;
   }
 
   .cv__info--detailed {
     padding: 0 50px;
-    width: calc(100% - 450px);
-
+    width: calc(100% - 350px);
+    flex-grow: 1;
     border-left: 2px solid #bfc0c1;
   }
 
-  .cv__info--short {
-    padding-top: 100px;
-  }
 
   .cv__section {
     padding: 25px 0;
@@ -101,7 +98,7 @@
   }
 
   .persanal__item--name {
-    width: 35%;
+    width: 100px;
   }
   .persanal__item--dot {
     width: 5%;
@@ -122,7 +119,7 @@
     content: '';
     position: absolute;
     left: 5px;
-    bottom: 3px;
+    top: 3px;
 
     border: 5px solid transparent;
     border-left-color: #414142;
@@ -171,7 +168,6 @@
   }
 
   /*CV__INFO--DETAILED education & reference*/
-
   .education__wrap,
   .reference__wrap {
     display: flex;
@@ -207,6 +203,10 @@
     flex-flow: row wrap;
 
     margin-bottom: 20px;
+  }
+
+  .experience__item {
+    margin-bottom: 25px;
   }
 
   .experience__item:last-child {
@@ -310,7 +310,6 @@
   
 
 @media(max-width: 1199px) {
-  
   /*HEADER---------------------------*/
   .cv__header {
     padding: 70px 0 20px;
@@ -322,8 +321,8 @@
   }
 
   .cv__image--wrap {
-    left: 50px;
-
+    left: 25px;
+    bottom: -75px;
     width: 200px;
     height: 200px;
   }
@@ -336,6 +335,7 @@
 
   .cv__info--short {
     padding: 0 25px;
+    padding-top: 75px;
     width: 250px;
   }
 
@@ -344,14 +344,8 @@
     width: calc(100% - 350px);
   }
 
-  .cv__info--short {
-    padding-top: 90px;
-  }
 
-
-  
   /*CV__INFO--SHORT inside --------------------*/
-
   .link-icon {
     width: 25px;
   }
@@ -386,7 +380,7 @@
   /*HEADER---------------------------*/
   .cv__header {
     padding: 20px 0;
-    min-height: 125px;
+    min-height: 145px;
   }
 
   .cv__name,
@@ -395,24 +389,25 @@
   }
   
   .cv__name {
-    margin-top: 50px
-
+    margin-top: 0;
   }
 
   .cv__image--wrap {
     left: 25px;
-    top: 20px;
-    bottom: auto;
+    bottom: 10px;
     width: 125px;
     height: 125px;
   }
 
-
   /*MAIN-----------------------------*/
   .cv__info {
     flex-direction: column;
-
     padding-top: 0;
+  }
+
+  .cv__info--short,
+  .cv__info--detailed {
+    width: 100%;
   }
 
   .cv__info--short {
@@ -420,7 +415,6 @@
     flex-flow: row wrap;
     justify-content: space-between;
     padding-top: 0;
-    width: calc(100% - 50px);
   }
 
   .cv__info--short .cv__section {
@@ -428,8 +422,6 @@
   }
 
   .cv__info--detailed {
-    width: calc(100% - 50px);
-
     border-left: none;
   }
 
@@ -450,12 +442,10 @@
     justify-content: flex-start;
   }
   
-  .persanal__item--name {
-    width: 25%;
-  }
   .persanal__item--dot {
     width: 3%;
   }
+  
   .persanal__item--value {
     width: 65%;
   }
@@ -466,10 +456,6 @@
 
   .contacts__item--link  {
     line-height: 20px;
-  }
-
-  .footer__wrapper {
-    font-size: 0.6rem;
   }
 
   .author__item {
