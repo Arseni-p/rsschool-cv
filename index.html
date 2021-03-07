@@ -8,7 +8,6 @@
     <meta name="description" content="CV Arseni Pantsialei, frontend (RSSchool)">
 
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/common.css">
 
   </head>
   <body>
@@ -16,7 +15,7 @@
       <h1 class="cv__name">Arseni Pantsialei </h1>
       <p class="cv__vacancy">Frontend-developer</p>
       <p class="cv__image--wrap">
-        <img class="cv__image" src="img/AVP-photo-ls.jpg" alt="Фото Арсений Пантелей" width="300" height="300">
+        <img class="cv__image" src="img/AVP-photo-ls.jpg" alt="Arseni_photo" width="300" height="300">
       </p>
     </header>
     <main class="cv__info">
@@ -37,7 +36,7 @@
             <li class="persanal__item">
               <span class="persanal__item--name">English</span>
               <span class="persanal__item--dot">:</span>
-              <span class="persanal__item--value">B1</span>
+              <span class="persanal__item--value">B2</span>
             </li>
             <li class="persanal__item hobbies">
               <span class="persanal__item--name">Hobbies</span>
@@ -105,22 +104,19 @@
               <path id="_Path_3" class="st0" d="M15.5,5c4.7,0,8.5,3.8,8.5,8.5"/>
               <path id="_Path_4" class="st0" d="M15.5,8.1c3,0,5.4,2.4,5.4,5.4"/>
               </svg>
-              
               <a class="contacts__item--link viber-link" href="viber://chat?number=%2B375296038739" title="Viber">Viber</a>
-
             </li>
-
-
           </ul>
         </section>
 
         <section class="cv__section skills__section">
           <h3 class="section__title">Skills</h3>
           <ul class="softwear__list">
-            <li class="softwear__item">HTML/CSS</li>
+            <li class="softwear__item">Basic JavaScript, React</li>
+            <li class="softwear__item">Webpack, grunt, gulp</li>
             <li class="softwear__item">Less/Sass</li>
-            <li class="softwear__item">Basic JavaScript</li>
-            <li class="softwear__item">Photoshop</li>
+            <li class="softwear__item">HTML/CSS</li>
+            <li class="softwear__item">Photoshop, Figma</li>
             <li class="softwear__item">MS Office</li>
           </ul>
         </section>
@@ -171,10 +167,27 @@
             <li class="experience__item">
               <div class="experience__item--wrap">
                 <h4 class="experience__item--title">Frontend-developer (learning)</h4>
-                <p class="experience__item--date">Apr 2020 &ndash; present time</p>
+                <p class="experience__item--date">Sep 2020 &ndash; present time</p>
                 <p class="experience__item--company">Different online-courses</p>
                 <p class="experience__item--text">During learning Frontend I completed following online courses of: <a href="https://www.it-academy.by" title="IT-Academy">IT-Academy</a>, <a href="https://htmlacademy.ru" title="HTML Academy">HTML Academy</a>, <a href="https://rs.school" title="RSSchool">RSSchool</a>; and learned materials from <a href="https://developer.mozilla.org/ru/" title="MDN">MDN Web Docs</a>, <a href="https://learn.javascript.ru" title="learnJS">Learn.Javascript</a>, etc.<br>
-                You can find my projects on my github account - <a href="https://github.com/Arseni-p" title="Github">Arseni-p</a></p>
+                You can find my projects on my github account - <a class="git__link" href="https://github.com/Arseni-p" title="Github">Arseni-p</a> and some of them here:</p>
+                <ul class="projects__list">
+                  <li class="project__item">
+                    <a class="project__link" href="https://rolling-scopes-school.github.io/arseni-p-JS2020Q3/webdev/" target="_blank">&ndash; Webdev</a>
+                  </li>
+                  <li class="project__item">
+                    <a class="project__link" href="https://rolling-scopes-school.github.io/arseni-p-JS2020Q3/shelter/pages/main/main.html" target="_blank">&ndash; Shelter</a>
+                  </li>
+                  <li class="project__item">
+                    <a class="project__link" href="https://rolling-scopes-school.github.io/arseni-p-JS2020Q3/calculator/" target="_blank">&ndash; Calculator</a>
+                  </li>
+                  <li class="project__item">
+                    <a class="project__link" href="https://rolling-scopes-school.github.io/arseni-p-JS2020Q3/momentum/" target="_blank">&ndash; Momentum</a>
+                  </li>
+                  <li class="project__item">
+                    <a class="project__link" href="https://arseni-p-english-for-kids.netlify.app/" target="_blank">&ndash; English for kids</a>
+                  </li>
+                </ul>
               </div>
             </li>
 
@@ -227,6 +240,25 @@
       </div>
 
     </main>
-    
+    <footer class="footer__wrapper">
+      <div class="footer__item logo-rs__wrapper">
+        <a 
+          class="rsschool__link"
+          href="https://rs.school/react/"
+          target="_blank">
+          <img src="./img/logo-rs-school.svg" class="rslogo-img" alt="logo-rs-school" />
+        </a>
+      </div>
+
+      <p class="footer__item task-date">2021</p>
+
+      <div class="footer__item author__wrapper">
+        <span class="author__item lang__author">Author:</span>
+        <a href="https://github.com/Arseni-p" class="author__link" target="_blank">
+          <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+          <span class="author__text">Arseni-p</span>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
