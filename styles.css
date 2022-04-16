@@ -123,7 +123,8 @@ a:active {
   }
 
   .cv__name,
-  .cv__vacancy {
+  .cv__vacancy,
+  .cv__navigation {
     margin-left: 350px;
     text-transform: uppercase;
   }
@@ -138,7 +139,7 @@ a:active {
   .cv__vacancy {
     font-size: 1.1rem;
     color: #949698;
-  
+    margin-bottom: 10px;
   }
   .cv__image--wrap {
     position: absolute;
@@ -169,7 +170,6 @@ a:active {
     border-left: 2px solid #bfc0c1;
   }
 
-
   .cv__section {
     padding: 25px 0;
     border-bottom: 2px solid #bfc0c1;
@@ -190,6 +190,15 @@ a:active {
     text-transform: uppercase;
 
     color: #00aeef;
+  }
+
+  .cv__navlist {
+    display: flex;
+    font-size: 0.8rem;
+  }
+
+  .cv__navitem:not(:last-child) {
+    margin-right: 15px;
   }
 
 
@@ -346,6 +355,12 @@ a:active {
     width: 100%;
   }
 
+  .experience__code {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
   .footer__wrapper {
     position: relative;
     padding: 0 20px;
@@ -430,7 +445,8 @@ a:active {
   }
 
   .cv__name,
-  .cv__vacancy {
+  .cv__vacancy,
+  .cv__navigation {
     margin-left: 300px;
   }
 
@@ -498,8 +514,18 @@ a:active {
   }
 
   .cv__name,
-  .cv__vacancy {
+  .cv__vacancy,
+  .cv__navigation {
     margin-left: 175px;
+  }
+
+  .cv__navlist {
+    flex-direction: column;
+  }
+
+  .cv__navitem:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 5px;
   }
   
   .cv__name {
