@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale-1">
     <meta name="description" content="CV Arseni Pantsialei, frontend (RSSchool)">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 
   </head>
   <body>
@@ -17,11 +17,27 @@
       <p class="cv__image--wrap">
         <img class="cv__image" src="img/AVP-photo-ls.jpg" alt="Arseni_photo" width="300" height="300">
       </p>
+      <nav class="cv__navigation">
+        <ul class="cv__navlist">
+          <li class="cv__navitem">
+            <a class="cv__navlink" href="#personal" title="personal">Personal</a>
+          </li>
+          <li class="cv__navitem">
+            <a class="cv__navlink" href="#education" title="education">Education</a>
+          </li>
+          <li class="cv__navitem">
+            <a class="cv__navlink" href="#experience" title="experience">Experience</a>
+          </li>
+          <li class="cv__navitem">
+            <a class="cv__navlink" href="#references" title="references">References</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="cv__info">
       <aside class="cv__info--short">
         <section class="cv__section cv__section--persanal">
-          <h3 class="section__title">Personal</h3>
+          <h2 class="section__title">Personal</h2>
           <ul class="persanal__list">
             <li class="persanal__item">
               <span class="persanal__item--name">Birthady</span>
@@ -47,7 +63,7 @@
         </section>
 
         <section class="cv__section">
-          <h3 class="section__title">Contacts</h3>
+          <h2 class="section__title">Contacts</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
               <svg class="link-icon feather feather-phone" xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" color="#000000" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>            
@@ -109,7 +125,7 @@
         </section>
 
         <section class="cv__section skills__section">
-          <h3 class="section__title">Skills</h3>
+          <h2 class="section__title">Skills</h2>
           <ul class="softwear__list">
             <li class="softwear__item">JavaScript, React</li>
             <li class="softwear__item">HTML/CSS</li>
@@ -121,7 +137,7 @@
         </section>
 
         <section class="cv__section qualities__section">
-          <h3 class="section__title">Qualities</h3>
+          <h2 class="section__title">Qualities</h2>
           <ul class="skills__list">
             <li class="skills__item">Team player</li>
             <li class="skills__item">Good communicator</li>
@@ -135,13 +151,13 @@
 
       <div class="cv__info--detailed">
         <section class="cv__section">
-          <h3 class="section__title section__title--personal">Personal</h3>
+          <h2 id="personal" class="section__title section__title--personal">Personal</h2>
           <p class="persanal__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <p class="persanal__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
 
         <section class="cv__section">
-          <h3 class="section__title section__title--education">Education</h3>
+          <h2 id="education" class="section__title section__title--education">Education</h2>
           <div class="education__wrap">
             <div class="education__item">
               <h4 class="education__title">Belarusian State Economic University, Minsk</h4>
@@ -160,7 +176,7 @@
         </section>
 
         <section class="cv__section">
-          <h3 class="section__title section__title--education">Experience</h3>
+          <h2 id="experince" class="section__title section__title--education">Experience</h2>
           <ul class="experience__list">
             <li class="experience__item">
               <div class="experience__item--wrap">
@@ -168,10 +184,10 @@
                 <p class="experience__item--date">Sep 2020 &ndash; <br> present time</p>
                 <p class="experience__item--company">Different online-courses</p>
                 <p class="experience__item--text">While learning Frontend I completed the following online courses of: <a href="https://www.it-academy.by" title="IT-Academy">IT-Academy</a>, <a href="https://htmlacademy.ru" title="HTML Academy">HTML Academy</a>, <a href="https://rs.school" title="RSSchool">RSSchool</a>; and learned materials from <a href="https://developer.mozilla.org/ru/" title="MDN">MDN Web Docs</a>, <a href="https://learn.javascript.ru" title="learnJS">Learn.Javascript</a>, etc.<br>
-                You can find my projects on my github account - <a class="git__link" href="https://github.com/Arseni-p" title="Github">Arseni-p</a> or call me)</p>
-                <!-- <ul class="projects__list">
+                You can find my projects on my github account - <a class="git__link" href="https://github.com/Arseni-p" title="Github">Arseni-p</a> or just call me:</p>
+                <ul class="projects__list">
                   <li class="project__item">
-                    <a class="project__link" href="https://rolling-scopes-school.github.io/arseni-p-JS2020Q3/webdev/" target="_blank">&ndash; XXXX</a>
+                    <a class="project__link" href="https://rolling-scopes-school.github.io/arseni-p-JS2020Q3/webdev/" target="_blank">&ndash; Webdev</a>
                   </li>
                   <li class="project__item">
                     <a class="project__link" href="https://rolling-scopes-school.github.io/arseni-p-JS2020Q3/shelter/pages/main/main.html" target="_blank">&ndash; Shelter</a>
@@ -182,10 +198,21 @@
                   <li class="project__item">
                     <a class="project__link" href="https://rolling-scopes-school.github.io/arseni-p-JS2020Q3/momentum/" target="_blank">&ndash; Momentum</a>
                   </li>
-                  <li class="project__item">
-                    <a class="project__link" href="https://arseni-p-english-for-kids.netlify.app/" target="_blank">&ndash; English for kids</a>
-                  </li>
-                </ul> -->
+                </ul>
+              </div>
+              <div class="experience__example">
+                <p class="experience__text">Code example:</p>
+                <p class="experience__example--text">
+                  <pre class="experience__code">
+let watchImg = () => {
+  if (popupCondition) {
+    currHour++;
+    if (currHour == 24) {currHour = 0};
+    imageForContainer();
+  }
+}
+                  </pre>
+                </p>
               </div>
             </li>
 
@@ -219,7 +246,7 @@
         </section>
 
         <section class="cv__section">
-          <h3 class="section__title section__title--reference">Reference</h3>
+          <h2 id="references" class="section__title section__title--reference">References</h2>
           <div class="reference__wrap">
             <div class="reference__item">
               <h4 class="reference__title">XXXXXXXXX Pavel</h4>
@@ -242,7 +269,7 @@
       <div class="footer__item logo-rs__wrapper">
         <a 
           class="rsschool__link"
-          href="https://rs.school/react/"
+          href="https://rs.school/"
           target="_blank">
           <img src="./img/logo-rs-school.svg" class="rslogo-img" alt="logo-rs-school" />
         </a>
