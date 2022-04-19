@@ -355,7 +355,8 @@ a:active {
     width: 100%;
   }
 
-  .experience__code {
+  .experience__code,
+  .experience__code--example {
     text-align: left;
     margin: 0;
     padding: 0;
